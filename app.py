@@ -32,12 +32,11 @@ def predict(model, income, loan_amount, credit_history, gender):
 # Function 4: User Interface
 def loan_prediction_app():
     # UI elements
-    st.markdown("""
+    st.markdown(""" 
         <style>
         body { font-family: 'Arial', sans-serif; background-color: #f0f2f6; }
         .main { background-color: white; padding: 10px; border-radius: 8px; max-width: 600px; margin: auto; }
         .header { text-align: center; padding: 10px; background-color: #4CAF50; color: white; }
-        .footer { text-align: center; padding: 10px; background-color: #4CAF50; color: white; }
         </style>
         <div class="main">
             <div class="header">
@@ -64,24 +63,17 @@ def loan_prediction_app():
         
         # Step 4: Display the result based on the prediction
         if result == 1:
-            st.markdown("""
+            st.markdown(""" 
                 <div class="main">
                     <h3 style="color:green;">Loan Approved</h3>
                 </div>
             """, unsafe_allow_html=True)
         else:
-            st.markdown("""
+            st.markdown(""" 
                 <div class="main">
                     <h3 style="color:red;">Loan Rejected</h3>
                 </div>
             """, unsafe_allow_html=True)
-
-    # Add a footer for UI aesthetics
-    st.markdown("""
-        <div class="footer">
-            <p>Loan Prediction App &copy; 2024</p>
-        </div>
-    """, unsafe_allow_html=True)
 
 # Run the Streamlit app
 if __name__ == '__main__':
