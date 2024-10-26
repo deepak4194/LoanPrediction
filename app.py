@@ -65,13 +65,13 @@ def loan_prediction_app():
         if result == 1:
             st.markdown(""" 
                 <div class="main">
-                    <h3 style="color:green;">Loan Approved</h3>
+                    <h3 style="color:green;">Loan Approved!</h3>
                 </div>
             """, unsafe_allow_html=True)
         else:
             st.markdown(""" 
                 <div class="main">
-                    <h3 style="color:red;">Loan Rejected</h3>
+                    <h3 style="color:red;">Loan Rejected!</h3>
                 </div>
             """, unsafe_allow_html=True)
 
